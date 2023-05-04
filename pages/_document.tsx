@@ -4,7 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <title>cute foxes</title>
+        <title>cute foxes</title>
+        <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
       </Head>
       <body>
         <Main />

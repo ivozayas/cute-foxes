@@ -21,12 +21,13 @@ export default function Home() {
       id: genID(),
       url: `https://randomfox.ca/images/${random(1, 123)}.jpg`
     } // Para emplear los métodos del evento: const addNewFox: MouseEventHandler<HTMLButtonElement /* tipo de elemento html */> = () => {}
-    
 
     setImages([
       ...images,
       newImageItem
     ])
+
+    window.plausible("add_fox")
   }
 
   return (
